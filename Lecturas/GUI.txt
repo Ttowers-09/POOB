@@ -1,0 +1,73 @@
+GUI
+una interfaz grafica se construye a través de componentes, los componentes son botones, alertas, labels (imagen).
+
+Los contenedores son un grupo especial de componentes para manejar y organizar otros componentes y pueden generar eventos
+los eventos en una acción especifica, generada por los periféricos (click, blur, alertas)
+
+
+ARQUITECTURA
+MVC (Model - view - control)
+
+model
+-Contiene los elementos que representa la información propia del dominio.
+
+vista
+-Lo que el usuario puede ver e interactúa.
+-Puede recibir información de los periféricos. 
+
+control
+-Elemento puente que sirve de puente de comunicación entre modelo y vista
+
+
+COMPONENTES SWING
+SUPERIOR
+- Muy general
+-Básicamente es la ventana 
+	-JFrame
+		- Tiene minimizar, ampliar y cerrar.
+	-JDialog (No puede existir sin un JFrame)
+		-Solo tiene cerrar.
+INTERMEDIO
+-mas pequeño
+	-JPanel (No puede existir sin un JFrame)
+		-Permite organizar los elementos.
+		-JCheckBox, JComboBox, Jlist, JSlider, JMenu, JRadioButton.
+
+ATÓMICO
+-Mucho mas especifico 
+
+
+LAYOUT Se aplica sobre los 
+Border
+-Divide la ventana en secciones 
+ (norte, sur, este o este)
+
+Grind
+-Divide la ventana en forma de matriz
+[1 , 2
+ 3 , 4
+ 5 , 6]
+
+Flow
+-Distribución Dinámica (depende del tamaño de la ventana)
+
+
+
+
+CLASES ANONIMAS
+-No tienen un nombre especifico
+-Sirve para instanciar clases que emplean interfaces 
+
+
+EVENTOS
+-Los eventos son escuchados por un listenner 
+	-Definir un oyente, Registrar la fuente de eventos e implementar.
+
+ADAPTERS V.S LISTENERS
+- Los adaptadores sirven para poder implementar todos los métodos de la interfaz de manera "invisible" y puedo ejecutar un solo método.
+-Sirve para cuando el interfaz tiene más de un método.
+
+
+
+EN EL PROYECTO DEBE HABER UN SOLO CANAL DE COMUNICACIÓN (CONTROLADOR) PARA PODER SER 
+
